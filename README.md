@@ -15,7 +15,6 @@ npx cap sync
 import { CheckOverlay } from 'capacitor-plugin-check-overlay';
 
 
-// Add exclution or white list
 constructor(private platfrom: Platform) {
     this.platfrom.ready().then(() => {
         // Add blacklist
