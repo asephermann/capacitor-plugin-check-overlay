@@ -11,9 +11,40 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`checkOverlayApps(...)`](#checkoverlayapps)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### checkOverlayApps(...)
+
+```typescript
+checkOverlayApps(options: { blackList: Array<string>; }) => Promise<CheckOverlayAppsResult>
+```
+
+| Param         | Type                                  | Description                                  |
+| ------------- | ------------------------------------- | -------------------------------------------- |
+| **`options`** | <code>{ blackList: string[]; }</code> | : <a href="#array">Array</a>&lt;string&gt; } |
+
+**Returns:** <code>Promise&lt;<a href="#checkoverlayappsresult">CheckOverlayAppsResult</a>&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### CheckOverlayAppsResult
+
+| Prop              | Type                                                  |
+| ----------------- | ----------------------------------------------------- |
+| **`hasOverlay`**  | <code>boolean</code>                                  |
+| **`message`**     | <code>string</code>                                   |
+| **`overlayApps`** | <code><a href="#array">Array</a>&lt;string&gt;</code> |
+
 </docgen-api>
