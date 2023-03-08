@@ -34,7 +34,7 @@ constructor(private platfrom: Platform) {
 
         this.checkOverlayApps(blacklist);
 
-        // without black, detect all app that request Overlay Permission
+        // without blacklist, detect all app that request Overlay Permission
         this.checkOverlayApps([]);
         }
     )
