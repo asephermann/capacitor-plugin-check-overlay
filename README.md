@@ -38,16 +38,17 @@ constructor(private platfrom: Platform) {
         this.checkOverlayApps([]);
         }
     )
-  }
+}
 
-checkMock = async (whiteList: Array<string>) => {
-    const checkResult = await MockLocationChecker.checkMock({whiteList});
+checkOverlayApps = async (blackList: Array<string>) => {
+    const checkResult = await CheckOverlay.checkOverlayApps({ blackList });
 
-    console.log('Mock Location Check Result:');
-    console.log('Is Mock Location: ', checkResult.isMock);
-    console.log('Messages: ', checkResult.messages);
-    console.log('Indicated Apps: ', checkResult.indicated.join("\n"));
-  };
+    console.log('checkOverlayApps Result:');
+    console.log('Has Overlay: ', checkResult.hasOverlay);
+    console.log('Messages: ', checkResult.message);
+    console.log('Overlay Apps: ', checkResult.overlayApps.join("\n"));
+
+};
 ```
 
 ## API
