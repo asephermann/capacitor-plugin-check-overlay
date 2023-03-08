@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-check-overlay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This plugin is an Android plugin that checks for any installed overlay apps on the device. It can be used to enhance user's security by providing a warning if any apps are granted permission to draw overlay layers above other apps on the screen.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
